@@ -17,8 +17,14 @@ Let S(n) be v1 + v2 + ... + vn. For example, S(11) = 36120, and S(1000) mod 1234
 Find S(1014) mod 123454321.
 
 ```
-#inside of root folder
 ruby clocksequence/test_clocksequence.rb
+```
+
+#FizzBuzz (classic)
+Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
+
+```
+ruby fizzbuzz/test_fizzbuzz.rb
 ```
 
 #Licence
