@@ -1,12 +1,12 @@
 require './clock.rb'
 
 class ClockCalculator
- 
+
   def sum_until(number)
     sum = 0
 
-    number.times do |i|
-      res = Clock.new.get(i+1)
+    for i in 0..(number) do
+      res = Clock.new.get(i)
       sum += res.to_i
     end
 
