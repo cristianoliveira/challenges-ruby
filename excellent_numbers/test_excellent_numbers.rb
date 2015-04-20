@@ -1,6 +1,8 @@
 require 'test/unit'
+require './excellent_numbers.rb'
 require './excellent_numbers_splitter.rb'
 require './excellent_numbers_validator.rb'
+require './excellent_numbers_finder.rb'
 
 class TestExcellentNumbers < Test::Unit::TestCase
   
@@ -45,7 +47,7 @@ class TestExcellentNumbers < Test::Unit::TestCase
     number = 48 
 
     #when
-    result = ExcellentNumbersValidator.new.validate(number)
+    result = ExcellentNumbersValidator.new.valid?(number)
 
     #then
     assert_true result
@@ -56,7 +58,7 @@ class TestExcellentNumbers < Test::Unit::TestCase
     number = 3468 
 
     #when
-    result = ExcellentNumbersValidator.new.validate(number)
+    result = ExcellentNumbersValidator.new.valid?(number)
 
     #then
     assert_true result
@@ -67,10 +69,58 @@ class TestExcellentNumbers < Test::Unit::TestCase
     number = 3498 
 
     #when
-    result = ExcellentNumbersValidator.new.validate(number)
+    result = ExcellentNumbersValidator.new.valid?(number)
 
     #then
     assert_false result
+  end
+
+  def test_find_excellents_between_0_99_it_should_return_array
+    #given
+    min, max = 0, 99
+    expected = [48]
+
+    #when
+    result = ExcellentNumbersFinder.new.find_all_between(min, max)
+
+    #then
+    assert_equal expected, result
+  end
+
+  def test_find_excellents_between_1000_9999_it_should_return_array
+    #given
+    min, max = 1000, 9999
+    expected = [3468]
+
+    #when
+    result = ExcellentNumbersFinder.new.find_all_between(min, max)
+
+    #then
+    assert_equal expected, result
+  end
+ 
+  def test_find_excellents_between_100000_999999_it_should_return_array
+    #given
+    min, max = 100000, 999999
+    expected = [140400, 190476, 216513, 300625, 334668, 416768, 484848, 530901]
+
+    #when
+    result = ExcellentNumbersFinder.new.find_all_between(min, max)
+
+    #then
+    assert_equal expected, result
+  end
+
+  def test_sum_excellents_between_100000_999999_it_should_return_2615199
+    #given
+    min, max = 100000, 999999
+    expected = 2615199 
+
+    #when
+    result = ExcellentNumbers.new.get(min, max)
+
+    #then
+    assert_equal expected, result
   end
 
 end
