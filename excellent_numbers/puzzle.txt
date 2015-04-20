@@ -1,0 +1,5 @@
+Today’s exercise channels our inner Project Euler:
+
+An excellent number n has an even number of digits and, if you split the number into the front half a and the back half b, then b 2 − a 2 = n. For example, 3468 = 682 − 342 = 4624 − 1156 = 3468, so 3468 is an excellent number. The only two-digit excellent number is 48 and the only four-digit excellent number is 3468. There are eight six-digit excellent numbers, 140400, 190476, 216513, 300625, 334668, 416768, 484848, and 530901, and their sum is 2615199. What is the sum of the 10-digit excellent numbers?
+
+Your task is to compute the sum of the 10-digit excellent numbers; in the spirit of Project Euler, your solution should take no more than one minute of computation time. When you are finished, you are welcome to read or run a suggested solution, or to post your own solution or discuss the exercise in the comments below.
