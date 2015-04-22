@@ -1,6 +1,18 @@
 # Challenges
 Some challenges solved in ruby
 
+#Find Duplicates, Space Edition
+We have an array of integers, where:
+
+The integers are in the range 1..n1..n
+The array has a length of n+1n+1
+It follows that our array has at least one integer which appears at least twice. But it may have several duplicates, and each duplicate may appear more than twice.
+
+Write a function which finds any integer that appears more than once in our array.
+
+[link to challenge](https://www.interviewcake.com/question/find-duplicate-optimize-for-space)
+
+
 #Excellent Numbers
 Today’s exercise channels our inner Project Euler:
 

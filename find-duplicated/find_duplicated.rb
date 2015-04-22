@@ -2,16 +2,22 @@ class FindDuplicated
   
   def in_array(array)
     dups = []
-    array.sort
+    array = array.sort
     
+    p "ARRAY SORTED #{array}"
+
     i = 0
     begin
-      # jump duplicateds
-      while duplicated? array, i
+      if duplicated? array, i
         dups.push array[i]
-        i +=1
+        
+        # jump duplicateds
+        while duplicated? array, i
+          i +=1
+        end
       end
-      i +=1 
+
+     i +=1 
     end while(i < array.size)
 
     dups
