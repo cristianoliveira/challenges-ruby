@@ -36,7 +36,7 @@ class IsomorficStringTest < Test::Unit::TestCase
     second_word = "egg" 
 
     # when
-    result = IsomorficWord.new.validate first_word, second_word 
+    result = IsomorficWord.new.valid? first_word, second_word 
 
     # then
     assert_true result
@@ -48,7 +48,7 @@ class IsomorficStringTest < Test::Unit::TestCase
     second_word = "bar" 
 
     # when
-    result = IsomorficWord.new.validate first_word, second_word 
+    result = IsomorficWord.new.valid? first_word, second_word 
 
     # then
     assert_false result

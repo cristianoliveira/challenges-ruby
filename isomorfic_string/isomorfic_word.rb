@@ -1,7 +1,7 @@
 require './word_mapper.rb'
 
 class IsomorficWord 
-  def validate(word, word_compare)
+   def valid?(word, word_compare)
     mapper = WordMapper.new
     word_map = mapper.map word 
     word_compare_map = mapper.map word_compare 
