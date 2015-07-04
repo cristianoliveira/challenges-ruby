@@ -1,6 +1,11 @@
 # Challenges
 Some challenges solved in ruby
 
+# Isomorfic words
+Given two strings s and t, determine if they are isomorphic. Two strings are isomorphic if the characters in s can be replaced to get t.
+
+For example,"egg" and "add" are isomorphic, "foo" and "bar" are not.
+
 #Evaluate Reverse Polish Notation
 Evaluate the value of an arithmetic expression in Reverse Polish Notation. Valid operators are +, -, *, /. Each operand may be an integer or another expression. For example:
 
