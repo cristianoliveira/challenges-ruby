@@ -1,6 +1,17 @@
 # Challenges
 Some challenges solved in ruby
 
+# MIT - Airport Reservation System
+An airport with only single runway. Build algorithm to reserve the runway for landings
+That algorithm should be able to:
+ - Request and reserve specific landing times (T)
+ - Add T to a Set of reservation (R) if there are no one scheduled within K minutes
+ - Remove from R after plane land
+ - All the operations should be done in O(log n) time where n = R(size) 
+Where T times, R reservation and K is parameter setted in 3
+
+Past schedules must be not allowed
+
 # Isomorfic words
 Given two strings s and t, determine if they are isomorphic. Two strings are isomorphic if the characters in s can be replaced to get t.
 
