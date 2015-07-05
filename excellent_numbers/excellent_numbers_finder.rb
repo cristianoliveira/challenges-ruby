@@ -1,5 +1,5 @@
-require './excellent_numbers_validator.rb'
-require './excellent_numbers_splitter.rb'
+require_relative 'excellent_numbers_validator.rb'
+require_relative 'excellent_numbers_splitter.rb'
 
 class ExcellentNumbersFinder
 

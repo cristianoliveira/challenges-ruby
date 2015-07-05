@@ -1,4 +1,4 @@
-require './clock_sequence.rb'
+require_relative 'clock_sequence.rb'
 
 class Clock
 

@@ -1,7 +1,7 @@
 require 'test/unit'
-require './clock_sequence.rb'
-require './clock_calculator.rb'
-require './clock.rb'
+require_relative 'clock_sequence.rb'
+require_relative 'clock_calculator.rb'
+require_relative 'clock.rb'
 
 class TestClockSequence <  Test::Unit::TestCase
 

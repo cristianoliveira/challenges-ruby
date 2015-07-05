@@ -1,4 +1,4 @@
-require './excellent_numbers.rb'
+require_relative 'excellent_numbers.rb'
 
 ini = Time.now
 

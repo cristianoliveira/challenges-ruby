@@ -1,4 +1,4 @@
-require './excellent_numbers_finder.rb'
+require_relative 'excellent_numbers_finder.rb'
 
 class ExcellentNumbers
 

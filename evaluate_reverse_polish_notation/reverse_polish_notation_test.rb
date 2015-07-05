@@ -1,7 +1,7 @@
 require 'test/unit'
-require './operator_evaluator.rb'
-require './calculator.rb'
-require './reverse_polish_notation.rb'
+require_relative 'operator_evaluator.rb'
+require_relative 'calculator.rb'
+require_relative 'reverse_polish_notation.rb'
 
 class ReversePolishNotationTest < Test::Unit::TestCase
 

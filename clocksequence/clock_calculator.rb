@@ -1,4 +1,4 @@
-require './clock.rb'
+require_relative 'clock.rb'
 
 class ClockCalculator
 

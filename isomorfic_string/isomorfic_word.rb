@@ -1,4 +1,4 @@
-require './word_mapper.rb'
+require_relative 'word_mapper.rb'
 
 class IsomorficWord 
    def valid?(word, word_compare)

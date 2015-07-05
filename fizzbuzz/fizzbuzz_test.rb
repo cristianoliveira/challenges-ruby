@@ -1,5 +1,5 @@
 require 'test/unit'
-require './fizzbuzz.rb'
+require_relative 'fizzbuzz.rb'
 class FizzBuzzTest < Test::Unit::TestCase
   def test_given_tree_it_should_print_fizz
     #given

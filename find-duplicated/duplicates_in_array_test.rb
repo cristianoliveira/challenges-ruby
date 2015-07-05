@@ -1,5 +1,5 @@
 require 'test/unit'
-require './find_duplicated.rb'
+require_relative 'find_duplicated.rb'
 
 class TestDuplicateInArray < Test::Unit::TestCase
   

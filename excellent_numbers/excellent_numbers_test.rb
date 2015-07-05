@@ -1,8 +1,8 @@
 require 'test/unit'
-require './excellent_numbers.rb'
-require './excellent_numbers_splitter.rb'
-require './excellent_numbers_validator.rb'
-require './excellent_numbers_finder.rb'
+require_relative 'excellent_numbers.rb'
+require_relative 'excellent_numbers_splitter.rb'
+require_relative 'excellent_numbers_validator.rb'
+require_relative 'excellent_numbers_finder.rb'
 
 class TestExcellentNumbers < Test::Unit::TestCase
   

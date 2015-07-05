@@ -1,5 +1,5 @@
 require 'test/unit'
-require './rotator.rb'
+require_relative 'rotator.rb'
 
 class RotateArrayTest < Test::Unit::TestCase
 

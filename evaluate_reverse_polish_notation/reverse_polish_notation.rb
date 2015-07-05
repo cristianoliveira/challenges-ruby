@@ -1,5 +1,5 @@
-require './operator_evaluator.rb'
-require './calculator.rb'
+require_relative 'operator_evaluator.rb'
+require_relative 'calculator.rb'
 
 class ReversePolishNotation
 
@@ -15,7 +15,7 @@ class ReversePolishNotation
       o = notation[i+2]
 
       if f.nil? && s.nil? && o.nil? 
-        raise "Ilegal Notation format"
+        raise "Illegal Notation format"
       end
 
       calculation = @calculator.calculate f, o, s
@@ -23,7 +23,7 @@ class ReversePolishNotation
       if !calculation.nil?
         notation.delete_at i #delete first
         notation.delete_at i #delete second
-        notation[i] = calculation
+        notation[i] = calculation # override operator
         i = 0
       else
         i = i + 1

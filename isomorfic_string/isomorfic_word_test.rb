@@ -1,6 +1,6 @@
 require 'test/unit'
-require './word_mapper.rb'
-require './isomorfic_word.rb'
+require_relative 'word_mapper.rb'
+require_relative 'isomorfic_word.rb'
 
 class IsomorficStringTest < Test::Unit::TestCase
 
