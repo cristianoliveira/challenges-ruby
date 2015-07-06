@@ -12,6 +12,15 @@ Where T times, R reservation and K is parameter setted in 3
 
 Past schedules must be not allowed
 
+# Linked Names
+Given a list/array of names sort themsuch that each name is followed by a name which starts
+wth the last character of the previous name.
+Example:
+```
+list = ["Luis","Hector","Selena","Emmanuel","Amish"]
+result: ["Emmanuel","Luis","Selena","Amish","Hector"]
+```
+
 # Isomorfic words
 Given two strings s and t, determine if they are isomorphic. Two strings are isomorphic if the characters in s can be replaced to get t.
 
