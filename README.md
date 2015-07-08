@@ -12,6 +12,19 @@ Where T times, R reservation and K is parameter setted in 3
 
 Past schedules must be not allowed
 
+# Cake Thief
+You are a renowned thief who has recently switched from stealing precious metals to stealing 
+cakes because of the insane profit margins. You end up hitting the jackpot, breaking into 
+the world's largest privately owned stock of cakes—the vault of the Queen of England.
+While Queen Elizabeth has a limited number of types of cake, she has an unlimited supply of each type.
+
+Each type of cake has a weight and a value, stored in tuples ↴ with two positions:
+
+An integer representing the weight of the cake in kilograms
+An integer representing the monetary value of the cake in British pounds
+
+You brought a duffel bag that can hold limited weight, and you want to make off with the most valuable haul possible.
+
 # Linked Names
 Given a list/array of names sort themsuch that each name is followed by a name which starts
 wth the last character of the previous name.
