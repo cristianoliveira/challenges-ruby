@@ -1,5 +1,5 @@
 class LetterCounter
-  
+
   def initialize(lines)
     @lines = lines
   end
@@ -18,8 +18,6 @@ class LetterCounter
         end
       end
     end
-
-    p "letters #{letters}"
 
     sorted = Hash.new
     for k in letters.sort do

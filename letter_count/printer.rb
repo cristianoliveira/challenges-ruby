@@ -12,7 +12,6 @@ class Printer
         val.times{ text_to_print += "*" }
         text_to_print += key
       end
-      p text_to_print
       result << text_to_print
     end
     result
