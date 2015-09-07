@@ -88,4 +88,18 @@ class CollatzStepCounterTest < Test::Unit::TestCase
     assert_equal expected, result
   end
 
+  def test_it_should_return_10_when_number_is_13_
+    # given
+    number = 13
+    expected = 10
+    # when
+    result = @step_counter.count_steps_for number
+
+    number = 13
+    # when
+    result = @step_counter.count_steps_for number
+    # then
+    assert_equal expected, result
+  end
+
 end

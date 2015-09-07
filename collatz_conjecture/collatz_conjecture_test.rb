@@ -71,7 +71,7 @@ class CollatzConjectureTest < Test::Unit::TestCase
   end
 
 
-  def test_it_should_return_7_17_in_a_range_of_1_to_8
+  def test_it_should_return_703_171_in_a_range_of_1_to_855
     # given
     range = 1..855
     expected = [703, 171]
@@ -79,6 +79,35 @@ class CollatzConjectureTest < Test::Unit::TestCase
     result = @collatz.max_in range
     # then
     assert_equal expected, result
+  end
+
+  def test_it_should_run_less_than_one_sec_for_a_range_of_2000
+    # given
+    start = Time.now
+    range = 1..2000
+
+    # when
+    result = @collatz.max_in range
+    finish = Time.now
+
+    p "Time total #{(finish - start)}"
+    # then
+    assert_true (finish - start) < 1.0
+  end
+
+
+  def test_it_should_run_less_than_6_sec_for_a_range_of_million
+    # given
+    start = Time.now
+    range = 1..999_999
+
+    # when
+    result = @collatz.max_in range
+    finish = Time.now
+
+    p "Time total #{(finish - start)}"
+    # then
+    assert_true (finish - start) < 10.0
   end
 
 end
