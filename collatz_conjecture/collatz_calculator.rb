@@ -5,13 +5,7 @@ class CollatzCalculator
 
   def calcule(number)
     return nil if number.nil? or number == 0 or number == 1
-    return number / 2 if even? number
-    return (number * 3) + 1
-  end
-
-  private
-  def even?(number)
-    return number % 2 == 0
+    number.even? ? number / 2 : (number * 3) + 1
   end
 
 end

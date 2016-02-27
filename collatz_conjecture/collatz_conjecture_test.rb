@@ -106,8 +106,9 @@ class CollatzConjectureTest < Test::Unit::TestCase
     finish = Time.now
 
     p "Time total #{(finish - start)}"
+    p "result #{result}"
     # then
-    assert_true (finish - start) < 10.0
+    assert_true (finish - start) < 6.0
   end
 
 end

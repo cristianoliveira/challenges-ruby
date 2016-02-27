@@ -19,10 +19,7 @@ class CollatzStepCounter
 
     next_number = @calculator.calcule number
     return steps, number unless next_number
-
-    steps, next_number = count(steps + 1, next_number)
-
-    return steps, next_number
+    count(steps + 1, next_number)
   end
 
 end
