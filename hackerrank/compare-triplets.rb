@@ -1,4 +1,5 @@
 #!/bin/ruby
+# https://www.hackerrank.com/challenges/compare-the-triplets
 
 alice = gets.strip.split(' ').map(&:to_i)
 bob = gets.strip.split(' ').map(&:to_i)
