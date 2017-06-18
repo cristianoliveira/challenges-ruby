@@ -29,4 +29,20 @@ class ReverseLinkedListTest < Test::Unit::TestCase
 
     assert_equal(linked.revert.to_a, [30, 20, 10])
   end
+
+  def test_it_maps
+    one = MyLinkedList.new(10)
+    two = MyLinkedList.new(20, one)
+    linked = MyLinkedList.new(30, two)
+
+    assert_equal(linked.map{|v| v * 2}, [60, 40, 20])
+  end
+
+  def test_it_filters
+    one = MyLinkedList.new(10)
+    two = MyLinkedList.new(20, one)
+    linked = MyLinkedList.new(30, two)
+
+    assert_equal(linked.filter{|v| v > 10}, [30, 20])
+  end
 end

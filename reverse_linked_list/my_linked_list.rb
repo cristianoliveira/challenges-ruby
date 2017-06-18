@@ -13,7 +13,7 @@ class MyLinkedList
     result
   end
 
-  def revert
+  def revert(node = self)
     reverted = self::class.new(self.value)
 
     n_next = self.next_node
@@ -23,5 +23,31 @@ class MyLinkedList
     end
 
     reverted
+  end
+
+  def each(&block)
+    node = self
+    while node
+      block.call(node.value)
+      node = node.next_node
+    end
+  end
+
+  def map(&block)
+    result = []
+    each do |value|
+      val = block.call(value)
+      result.push(val)
+    end
+    result
+  end
+
+  def filter(&block)
+    result = []
+    each do |value|
+      selected = block.call(value)
+      result.push(value) if selected
+    end
+    result
   end
 end
